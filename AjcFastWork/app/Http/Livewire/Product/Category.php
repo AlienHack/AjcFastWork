@@ -76,6 +76,8 @@ class Category extends Component
             'showConfirmButton' => false,
             'timerProgressBar' => true,
         ]);
+
+        $this->search = $category->name;
     }
     public function editSubmit() {
         if (!isset($this->editForm['name'])){

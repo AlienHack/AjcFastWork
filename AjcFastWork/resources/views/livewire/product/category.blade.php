@@ -212,9 +212,9 @@
                                                 <td>
                                                     <label for="edit-product-modal"
                                                            wire:click="setEditProductForm('{{ $product->id }}')"
-                                                           class="btn btn-sm btn-primary">{{ __('Edit') }}</label>
+                                                           class="btn btn-sm btn-warning">{{ __('Edit') }}</label>
                                                     <button wire:click="deleteProduct('{{ $product->id }}')"
-                                                            class="btn btn-sm btn-danger">{{ __('Delete') }}</button>
+                                                            class="btn btn-sm btn-error">{{ __('Delete') }}</button>
                                                 </td>
                                             </tr>
                                         @empty
