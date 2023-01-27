@@ -152,6 +152,10 @@ class Category extends Component
         $this->productList = Product::where('category_id', $this->selectedCategory)->get();
     }
     public function delete(ProductCategory $category){
+        $products = Product::where('category_id', $category->id)->get();
+        foreach ($products as $product){
+            $product->delete();
+        }
         $category->delete();
         $this->dispatchBrowserEvent('showAlert', [
             'icon' => 'success',
