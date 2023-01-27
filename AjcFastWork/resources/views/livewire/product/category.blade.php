@@ -198,7 +198,7 @@
                                             <th>{{ __('Raw Price') }}</th>
                                             <th>{{ __('Price') }}</th>
                                             <th>{{ __('Unit') }}</th>
-                                            <th>{{ __('Action') }}</th>
+                                            <th class="text-end">{{ __('Actions') }}</th>
                                         </tr>
                                         </thead>
                                         <tbody>
@@ -209,7 +209,7 @@
                                                 <td>{{ $product->raw_price }}</td>
                                                 <td>{{ $product->price }}</td>
                                                 <td>{{ $product->unit }}</td>
-                                                <td>
+                                                <td class="text-end">
                                                     <label for="edit-product-modal"
                                                            wire:click="setEditProductForm('{{ $product->id }}')"
                                                            class="btn btn-sm btn-warning">{{ __('Edit') }}</label>
