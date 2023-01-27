@@ -52,7 +52,7 @@
                                     <label wire:click="setProductForm('{{$category->id}}')" class="btn btn-info ml-2"
                                            for="products-modal">{{ __('Products') }}</label>
                                     <button onclick="confirmDelete('{{$category->id}}')"
-                                            class="btn btn-error ml-2">{{ __('Remove') }}</button>
+                                            class="btn btn-error ml-2">{{ __('Delete') }}</button>
                                 </td>
                             </tr>
                         @empty
@@ -102,7 +102,7 @@
                         </div>
                         <div class="modal-action">
                             <button class="btn">{{ __('Save') }}</button>
-                            <label for="add-modal" class="btn">{{ __('Cancel') }}</label>
+                            <label for="add-modal" class="btn btn-ghost">{{ __('Cancel') }}</label>
                         </div>
                     </form>
                 </div>
@@ -142,7 +142,7 @@
                         </div>
                         <div class="modal-action">
                             <button class="btn">{{ __('Save') }}</button>
-                            <label for="edit-modal" class="btn">{{ __('Cancel') }}</label>
+                            <label for="edit-modal" class="btn btn-ghost">{{ __('Cancel') }}</label>
                         </div>
                     </form>
                 </div>
