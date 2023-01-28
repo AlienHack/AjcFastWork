@@ -5,15 +5,27 @@
 </x-slot>
 
 <div>
-    <div class="py-12 pb-6">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You can manage product categories here") }}
+    <section id="header-section">
+        <div class="py-12 pb-6">
+            <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+                <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                    <div class="p-6 text-gray-900 dark:text-gray-100">
+                        <header>
+                            <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
+                                {{ __('Product Categories') }}
+                            </h2>
+
+                            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
+                                {{ __("You can manage product categories here") }}
+                            </p>
+                        </header>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
     <section id="search-section">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="flex justify-between">
@@ -74,7 +86,7 @@
                 <div class="modal-box">
                     <h3 class="font-bold text-lg">{{ __('Add New Category') }}</h3>
                     <form wire:submit.prevent="addSubmit">
-                        <div class="mt-6 bg-gray-50 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                        <div class="mt-6 bg-gray-100 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                             <div class="p-6 text-gray-900 dark:text-gray-100">
                                 <div>
                                     <span class="p-2">{{__('Category Name')}}</span>
@@ -114,7 +126,7 @@
                 <div class="modal-box">
                     <h3 class="font-bold text-lg">{{ __('Edit Category') }}</h3>
                     <form wire:submit.prevent="editSubmit">
-                        <div class="mt-6 bg-gray-50 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                        <div class="mt-6 bg-gray-100 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                             <div class="p-6 text-gray-900 dark:text-gray-100">
                                 <div>
                                     <span class="p-2">{{__('Category Name')}}</span>
@@ -153,7 +165,7 @@
             <div class="modal">
                 <div class="modal-box max-w-7xl">
                     <h3 class="font-bold text-lg">{{ __('Edit Products') }}</h3>
-                    <div class="mt-6 bg-gray-50 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                    <div class="mt-6 bg-gray-100 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="grid grid-cols-3 gap-4">
                             <form wire:submit.prevent="addProduct">
                                 <div class="p-6 text-gray-900 dark:text-gray-100">
@@ -182,7 +194,7 @@
                                         <input type="text" wire:model.defer="productForm.unit" placeholder=""
                                                class="input w-full"/>
                                     </div>
-                                    <div class="mt-3 text-end">
+                                    <div class="mt-5 text-end">
                                         <x-primary-button>{{__('Add Product')}}</x-primary-button>
                                     </div>
                                 </div>
@@ -241,7 +253,7 @@
                 <div class="modal-box">
                     <h3 class="font-bold text-lg">{{ __('Edit Products') }}</h3>
                     <form wire:submit.prevent="editProductSubmit">
-                        <div class="mt-6 bg-gray-50 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                        <div class="mt-6 bg-gray-100 dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                             <div>
                                 <div class="p-6 text-gray-900 dark:text-gray-100">
                                     <div>

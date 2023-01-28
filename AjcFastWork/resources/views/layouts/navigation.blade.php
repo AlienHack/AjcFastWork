@@ -16,6 +16,10 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
 
+                    <x-nav-link :href="route('quotations')" :active="request()->routeIs('quotations')">
+                        {{ __('Quotations') }}
+                    </x-nav-link>
+
                     <x-nav-link :active="request()->routeIs('products.*')">
                         <x-dropdown align="right" width="48">
                             <x-slot name="trigger">
@@ -36,6 +40,10 @@
                                 </x-dropdown-link>
                             </x-slot>
                         </x-dropdown>
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('settings')" :active="request()->routeIs('settings')">
+                        {{ __('Branch Settings') }}
                     </x-nav-link>
 
                 </div>
