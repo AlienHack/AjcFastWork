@@ -11,7 +11,7 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-4 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-5 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
@@ -74,7 +74,11 @@
                     </x-nav-link>
 
                     <x-nav-link :href="route('settings')" :active="request()->routeIs('settings')">
-                        {{ __('Branch Settings') }}
+                        {{ __('Customers') }}
+                    </x-nav-link>
+
+                    <x-nav-link :href="route('settings')" :active="request()->routeIs('settings')">
+                        {{ __('Branches') }}
                     </x-nav-link>
 
                 </div>
