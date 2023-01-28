@@ -153,6 +153,10 @@
                                 <label class="label pt-6 text-lg font-bold">{{ __('Document Settings') }}</label>
                                 <div class="bg-gray-100 sm:rounded-lg  p-4 my-4 grid grid-cols-3 gap-4">
                                     <div>
+                                        <label class="label">{{ __('Vat') }}</label>
+                                        <input type="number" wire:model.defer="editForm.vat" placeholder="{{ __('7') }}" class="input w-full max-w-md"/>
+                                    </div>
+                                    <div>
                                         <label class="label">{{ __('Quotation Prefix') }}</label>
                                         <input type="text" wire:model.defer="editForm.quotation_prefix" placeholder="{{ __('QT') }}" class="input w-full max-w-md"/>
                                     </div>
@@ -247,6 +251,10 @@
 
                                 <label class="label pt-6 text-lg font-bold">{{ __('Document Settings') }}</label>
                                 <div class="bg-gray-100 sm:rounded-lg  p-4 my-4 grid grid-cols-3 gap-4">
+                                    <div>
+                                        <label class="label">{{ __('Vat') }}</label>
+                                        <input type="number" wire:model.defer="addForm.vat" placeholder="{{ __('7') }}" class="input w-full max-w-md"/>
+                                    </div>
                                     <div>
                                         <label class="label">{{ __('Quotation Prefix') }}</label>
                                         <input type="text" wire:model.defer="addForm.quotation_prefix" placeholder="{{ __('QT') }}" class="input w-full max-w-md"/>

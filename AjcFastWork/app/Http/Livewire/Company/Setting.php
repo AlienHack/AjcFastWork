@@ -42,6 +42,7 @@ class Setting extends Component
         $this->editForm['phone'] = $branch->phone;
         $this->editForm['fax_id'] = $branch->fax_id;
         $this->editForm['logo'] = $branch->logo;
+        $this->editForm['vat'] = $branch->vat;
         $this->editForm['quotation_prefix'] = $branch->quotation_prefix;
         $this->editForm['invoice_prefix'] = $branch->invoice_prefix;
         $this->editForm['receipt_prefix'] = $branch->receipt_prefix;
@@ -82,6 +83,7 @@ class Setting extends Component
         $branch->phone = $this->editForm['phone'] ?? "";
         $branch->fax_id = $this->editForm['fax_id'] ?? "";
         $branch->logo = $this->editForm['logo'] ?? "";
+        $branch->vat = $this->editForm['vat'] ?? "";
         $branch->quotation_prefix = $this->editForm['quotation_prefix'] ?? "";
         $branch->invoice_prefix = $this->editForm['invoice_prefix'] ?? "";
         $branch->receipt_prefix = $this->editForm['receipt_prefix'] ?? "";

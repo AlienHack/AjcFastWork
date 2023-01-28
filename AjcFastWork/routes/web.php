@@ -29,7 +29,10 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/settings', \App\Http\Livewire\Company\Setting::class)->name('settings');
     Route::get('/products/categories', \App\Http\Livewire\Product\Category::class)->name('products.categories');
-    Route::get('/quotations', \App\Http\Livewire\Quotation\Quotation::class)->name('quotations');
+
+    Route::get('/quotations', \App\Http\Livewire\Quotation\Quotation::class)->name('documents.quotations');
+    Route::get('/quotations/create', \App\Http\Livewire\Quotation\Quotation::class)->name('documents.quotations.create');
+    Route::get('/quotations/{id}', \App\Http\Livewire\Quotation\Quotation::class)->name('documents.quotations.edit');
 });
 
 require __DIR__.'/auth.php';
